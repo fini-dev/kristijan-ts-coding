@@ -1,3 +1,5 @@
+## You can check this screen record to see how it works.
+
 [Watch the video](https://youtu.be/ykizJbmeRvI)
 
 ## Overview of the Recruitment Exercise
