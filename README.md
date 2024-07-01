@@ -1,4 +1,4 @@
-[![Watch the video]](https://raw.githubusercontent.com/fini-dev/kristijan-ts-coding/blob/main/prototype.mp4)
+[![Watch the video]](https://raw.githubusercontent.com/fini-dev/kristijan-ts-coding/main/prototype.mp4)
 
 ## Overview of the Recruitment Exercise
 
