@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Chat Messenger API
+  version: 1.0.0
+paths:
+  /messages:
+    get:
+      summary: Get all messages
+      responses:
+        '200':
+          description: A list of messages
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    message:
+                      type: string
+                    user:
+                      type: string
+                    timestamp:
+                      type: string
+  /message:
+    post:
+      summary: Send a new message
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                user:
+                  type: string
+      responses:
+        '200':
+          description: Message sent successfully
+        '400':
+          description: Bad request, invalid input
