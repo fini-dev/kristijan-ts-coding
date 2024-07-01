@@ -1,3 +1,5 @@
+[![Watch the video]](https://raw.githubusercontent.com/fini-dev/kristijan-ts-coding/blob/main/prototype.mp4)
+
 ## Overview of the Recruitment Exercise
 
 This is a dummy project, which is used to demonstrate knowledge of node and Angular as well as development in general. It serves as an example with some bad practices included.
