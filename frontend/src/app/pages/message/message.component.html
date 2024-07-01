@@ -1,0 +1,37 @@
+
+<div class="parent"> 
+  <div class="container"> 
+    <div class="content">
+    	<h1 class="text-2xl my-8">Chat</h1>
+    	<div>
+    		<div *ngFor="let message of messages; index as i;">
+    			<div style="background-color: #fff;">
+    	      <span class="bg-slate-400" class="block bg-slate-200 text-slate-500">#{{i + 1}} - {{ message.status }}</span>
+    	      <div class="p-2" [ngClass]="{'text-slate-500': message.status === 'draft'}">
+    	        {{message.message}}
+    	      </div>
+    	    </div>
+        </div>
+      </div>
+    	
+      <div *ngIf="! message.empty()">    
+        <div style="background-color: #fff;">
+          <span class="bg-slate-400" class="block bg-slate-200 text-slate-500">#preview - {{ message.status }}</span>
+          <div class="p-2" [ngClass]="{'text-slate-500': message.status === 'draft'}">
+            {{message.message}}
+          </div>
+        </div>
+      </div>
+      <form (ngSubmit)="onSubmit()">
+        <label class="mt-4">
+          <div>Write Message</div>
+          <textarea class="block w-full" required name="text" [(ngModel)]="message.message"></textarea>
+        </label>
+
+        <button type="submit"
+            [disabled]="message.status === 'pending'"            
+        >Send</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+
+<div class="parent"> 
+    <div class="container" [ngClass]="isSignDivVisiable ? 'active' :'' " id="container">
+        <div class="form-container sign-up" >
+            <form>
+                <h1>Create Account</h1>
+                <span>Use your email for registeration</span>
+                <input type="text" name="name" [(ngModel)]="signUpObj.name" placeholder="Name">
+                <input type="email" name="email" [(ngModel)]="signUpObj.email" placeholder="Email">
+                <input type="password" name="password"  [(ngModel)]="signUpObj.password" placeholder="Password">
+                <button (click)="onRegister()">Sign Up</button>
+                <a href="#" (click)="switchToSignIn($event)">Sign In</a>
+            </form>
+        </div>
+        <div class="form-container sign-in" >
+            <form>
+                <h1>Sign In</h1>                
+                <span>Use your email password</span>
+                <input type="email" name="email" [(ngModel)]="loginObj.email" placeholder="Email">
+                <input type="password" name="password"   [(ngModel)]="loginObj.password" placeholder="Password">                
+                <button (click)="onLogin()">Sign In</button>
+                <a href="#" (click)="switchToSignUp($event)">Sign Up</a>
+            </form>
+        </div>
+    </div>
+</div>
+
