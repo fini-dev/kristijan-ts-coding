@@ -1,7 +1,4 @@
-// [![Watch the video]](https://raw.githubusercontent.com/fini-dev/kristijan-ts-coding/main/prototype.mp4)
-<video width="600" controls>
-  <source src="https://raw.githubusercontent.com/fini-dev/kristijan-ts-coding/main/prototype.mp4" type="video/mp4">
-</video>
+[Watch the video](https://youtu.be/ykizJbmeRvI)
 
 ## Overview of the Recruitment Exercise
 
